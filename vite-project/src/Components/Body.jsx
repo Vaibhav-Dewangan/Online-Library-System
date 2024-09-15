@@ -48,8 +48,8 @@ function Body(){
           <h2 className="font-bold  lg:text-xl pr-6 pl-6 sm:pl-10 lg:pr-20 lg:pl-20 ">Popular Books</h2>
           <div className="Card-1 flex gap-5 p-6 sm:pl-10 sm:pr-10 lg:pr-20 lg:pl-20 lg:gap-10 overflow-x-auto   ">
             
-            {PopularBooks.map((FictionBook)=>{
-              return <BookCard key={FictionBook.id} bookId={FictionBook.id} rating={FictionBook.rating} title={FictionBook.shortName} imageid={FictionBook.imageId} />
+            {PopularBooks.map((PopularBook)=>{
+              return <BookCard key={PopularBook.id} bookId={PopularBook.id} rating={PopularBook.rating} title={PopularBook.shortName} imageid={PopularBook.imageId} />
             })}
            
           </div>
