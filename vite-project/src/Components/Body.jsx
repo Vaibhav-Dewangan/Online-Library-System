@@ -4,25 +4,29 @@ import { BooksDetails } from "../utils/MockData";
 import BookCard from "./BookCard";
 import WelcomePage from "./Welcome";
 import { Link } from "react-router-dom";
+import {useSelector} from "react-redux";
+import { useEffect } from "react";
 import './body.css';
 
 
 
 function Body(){
+
+  const booksFromRedux = useSelector((state) => state.books.books); 
+
+  const [newBooksDetails, setNewBooksDetails] = useState([...BooksDetails]);
+
+  useEffect(() => {
+    setNewBooksDetails([...BooksDetails, ...booksFromRedux]);
+  }, [booksFromRedux]);
  
-  const Fiction = BooksDetails.filter(book => book.category === "Fiction");
-  const[FictionBooks, setFictionBooks] = useState(Fiction);
+  const Fiction = newBooksDetails.filter(book => book.category === "Fiction");
 
-  const NonFiction = BooksDetails.filter(book => book.category === "Non-Fiction");
-  const[NonFictionBooks, setNonFictionBooks] = useState(NonFiction);
+  const NonFiction = newBooksDetails.filter(book => book.category === "Non-Fiction");
 
-  const Academic = BooksDetails.filter(book => book.category === "Academic");
-  const[AcademicBooks, setAcademicBooks] = useState(Academic);
+  const Academic = newBooksDetails.filter(book => book.category === "Academic");
 
-  const Popular = BooksDetails.filter(book => book.rating >= 4.5);
-  const[PopularBooks, setPopularBooks] = useState(Popular);
-
-  
+  const Popular = newBooksDetails.filter(book => book.rating >= 4.5);
 
   
     return(
@@ -48,7 +52,7 @@ function Body(){
           <h2 className="font-bold  lg:text-xl pr-6 pl-6 sm:pl-10 lg:pr-20 lg:pl-20 ">Popular Books</h2>
           <div className="Card-1 flex gap-5 p-6 sm:pl-10 sm:pr-10 lg:pr-20 lg:pl-20 lg:gap-10 overflow-x-auto   ">
             
-            {PopularBooks.map((PopularBook)=>{
+            {Popular.map((PopularBook)=>{
               return <BookCard key={PopularBook.id} bookId={PopularBook.id} rating={PopularBook.rating} title={PopularBook.shortName} imageid={PopularBook.imageId} />
             })}
            
@@ -59,7 +63,7 @@ function Body(){
           <h2 className="font-bold  lg:text-xl pr-6 pl-6 sm:pl-10 lg:pr-20 lg:pl-20 ">Fiction Books</h2>
           <div className="Card-1 flex gap-5 p-6 sm:pl-10 sm:pr-10 lg:pr-20 lg:pl-20 lg:gap-10 overflow-x-auto   ">
             
-            {FictionBooks.map((FictionBook)=>{
+            {Fiction.map((FictionBook)=>{
               return <BookCard key={FictionBook.id} bookId={FictionBook.id} rating={FictionBook.rating} title={FictionBook.shortName} imageid={FictionBook.imageId} />
             })}
            
@@ -70,7 +74,7 @@ function Body(){
           <h2 className="font-bold  lg:text-xl pr-6 pl-6 sm:pl-10  lg:pr-20 lg:pl-20">Non-Fiction Books</h2>
           <div className="Card-1 flex gap-5 p-6 sm:pl-10 sm:pr-10 lg:pr-20 lg:pl-20 lg:gap-10 overflow-x-auto ">
            
-          {NonFictionBooks.map((NonFictionBook)=>{
+          {NonFiction.map((NonFictionBook)=>{
               return <BookCard key={NonFictionBook.id} bookId={NonFictionBook.id} rating={NonFictionBook.rating} title={NonFictionBook.shortName} imageid={NonFictionBook.imageId} />
             })}
 
@@ -81,7 +85,7 @@ function Body(){
           <h2 className="font-bold  lg:text-xl pr-6 pl-6 sm:pl-10 lg:pr-20 lg:pl-20">Academic Books</h2>
           <div className="Card-1 flex gap-5 p-6 sm:pl-10 sm:pr-10 lg:pr-20 lg:pl-20 lg:gap-10 overflow-x-auto ">
             
-          {AcademicBooks.map((AcademicBook)=>{
+          {Academic.map((AcademicBook)=>{
               return <BookCard key={AcademicBook.id} bookId={AcademicBook.id} rating={AcademicBook.rating} title={AcademicBook.shortName} imageid={AcademicBook.imageId} />
             })}
             

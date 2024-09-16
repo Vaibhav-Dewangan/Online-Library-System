@@ -1,10 +1,24 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { BooksDetails } from "../utils/MockData";
+import { useState } from "react";
+import { useSelector } from "react-redux";
+import { useEffect } from "react";
 
 function ViewDetails() {
     const { id } = useParams();
-    const book = BooksDetails.find(book => book.id === parseInt(id));
+    
+    const booksFromRedux = useSelector((state) => state.books.books); 
+    const [newBooksDetails, setNewBooksDetails] = useState([...BooksDetails]);
+
+    useEffect(() => {
+        if (booksFromRedux.length > 0) {
+            setNewBooksDetails([...BooksDetails, ...booksFromRedux]);
+          }
+    }, [booksFromRedux]);
+
+    const book = newBooksDetails.find(book => book.id === id);
+    console.log(book);
 
     if (!book) return <p className="h-screen mt-5 pl-6 sm:pl-10 lg:pl-20 text-red-500 lg:text-xl">Book not found</p>;
 
@@ -21,7 +35,7 @@ function ViewDetails() {
                 </div>
 
                 {/* Book Details */}
-                <div className="sm:ml-6 mt-6 sm:mt-0 w-full sm:w-2/3">
+                <div className="sm:ml-6 mt-6 sm:mt-0 w-full sm:w-2/3 ">
                     <h1 className="text-2xl font-bold text-gray-800">{book.name}</h1>
                     <h2 className="text-xl text-gray-600 mt-2">{book.author}</h2>
                     <p className="text-sm text-gray-500 italic mt-1">{book.genre}</p>
@@ -33,8 +47,8 @@ function ViewDetails() {
 
                     {/* Button to go back */}
                     <div className="mt-6 flex flex-row gap-5">
-                        <Link to={`/books/${book.category}`} className="flex flex-row gap-2 p-1" ><p className="text-red-500 font-bold ">Back to List</p></Link>
-                        <Link to="/BrowseBook" className="flex flex-row gap-2 p-1" ><p className="text-red-500 font-bold ">Browse Books</p></Link>
+                    <Link to="/BrowseBook" className="flex flex-row gap-2 p-1" ><p className="text-red-500 font-bold bg-slate-200 rounded-xl pl-2 pr-2 active:scale-95 ">Browse Books</p></Link>
+                        <Link to={`/books/${book.category}`} className="flex flex-row gap-2 p-1 " ><p className="text-red-500 font-bold bg-slate-200 rounded-xl pl-2 pr-2 active:scale-95 ">View More {book.category} Books</p></Link>
                     </div>
     
                 </div>

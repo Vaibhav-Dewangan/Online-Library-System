@@ -1,7 +1,7 @@
 
 export const BooksDetails = [
     {
-        id: 1,
+        id: '1',
         name:"Where the Crawdads Sing",
         shortName: "Crawdads",
         rating: "4.8",
@@ -12,7 +12,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1582135294i/36809135.jpg"
       },
       {
-        id: 2,
+        id: '2',
         name:"The Night Circus",
         shortName: "Night Circus",
         rating: "4.4",
@@ -23,7 +23,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1387124618i/9361589.jpg"
       },
       {
-        id: 3,
+        id: '3',
         name:"The Silent Patient",
         shortName: "Silent Patient",
         rating: "4.2",
@@ -34,7 +34,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1668782119i/40097951.jpg"
       },
       {
-        id: 4,
+        id: '4',
         name:"Circe",
         shortName: "Circe",
         rating: "4.6",
@@ -45,7 +45,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1565909496i/35959740.jpg"
       },
       {
-        id: 5,
+        id: '5',
         name:"The Seven Husbands of Evelyn Hugo",
         shortName: "Evelyn Hugo",
         rating: "4.5",
@@ -56,7 +56,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1664458703i/32620332.jpg"
       },
       {
-        id: 6,
+        id: '6',
         name:"The Song of Achilles",
         shortName: "Achilles",
         rating: "4.7",
@@ -67,7 +67,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1357177533i/13623848.jpg"
       },
       {
-        id: 7,
+        id: '7',
         name:"The Invisible Life of Addie LaRue",
         shortName: "Addie LaRue",
         rating: "4.4",
@@ -78,7 +78,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1584633432i/50623864.jpg"
       },
       {
-        id: 8,
+        id: '8',
         name:"A Man Called Ove",
         shortName: "Ove",
         rating: "4.6",
@@ -89,7 +89,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1405259930i/18774964.jpg"
       },
       {
-        id: 9,
+        id: '9',
         name:"Little Fires Everywhere",
         shortName: "Little Fires",
         rating: "4.3",
@@ -100,7 +100,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1522684533i/34273236.jpg"
       },
       {
-        id: 10,
+        id: '10',
         name:"The Goldfinch",
         shortName: "Goldfinch",
         rating: "4.2",
@@ -111,7 +111,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1378710146i/17333223.jpg"
       },
       {
-        id: 11,
+        id: '11',
         genre: "Non-Fiction, Memoir",
         name: "Becoming",
         shortName: "Becoming",
@@ -122,7 +122,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1528206996i/38746485.jpg"
       },
       {
-        id: 12,
+        id: '12',
         genre: "Non-Fiction, Self-help",
         name: "Atomic Habits",
         shortName: "Atomic",
@@ -133,7 +133,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1655988385i/40121378.jpg"
       },
       {
-        id: 13,
+        id: '13',
         genre: "Non-Fiction, History",
         name: "Sapiens: A Brief History of Humankind",
         shortName: "Sapiens",
@@ -144,7 +144,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1703329310i/23692271.jpg"
       },
       {
-        id: 14,
+        id: '14',
         genre: "Non-Fiction, Memoir",
         name: "Educated",
         shortName: "Educated",
@@ -155,7 +155,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1506026635i/35133922.jpg"
       },
       {
-        id: 15,
+        id: '15',
         genre: "Non-Fiction, Psychology",
         name: "Thinking, Fast and Slow",
         shortName: "Thinking",
@@ -166,7 +166,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1317793965i/11468377.jpg"
       },
       {
-        id: 16,
+        id: '16',
         genre: "Non-Fiction, Science",
         name: "The Immortal Life of Henrietta Lacks",
         shortName: "Henrietta",
@@ -177,7 +177,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327878144i/6493208.jpg"
       },
       {
-        id: 17,
+        id: '17',
         genre: "Non-Fiction, Memoir",
         name: "The Glass Castle",
         shortName: "Glass Castle",
@@ -188,7 +188,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1523542886i/7445.jpg"
       },
       {
-        id: 18,
+        id: '18',
         genre: "Non-Fiction, Biography",
         name: "Steve Jobs",
         shortName: "Steve Jobs",
@@ -199,7 +199,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1511288482i/11084145.jpg"
       },
       {
-        id: 19,
+        id: '19',
         genre: "Non-Fiction, Science",
         name: "The Gene: An Intimate History",
         shortName: "The Gene",
@@ -210,7 +210,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1452452965i/27276428.jpg"
       },
       {
-        id: 20,
+        id: '20',
         genre: "Non-Fiction, History",
         name: "The Wright Brothers",
         shortName: "Wright Brothers",
@@ -221,7 +221,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1430942575i/22609391.jpg"
       },
       {
-        id: 21,
+        id: '21',
         genre: "Academic, Philosophy",
         name: "Critique of Pure Reason",
         shortName: "Critique",
@@ -232,7 +232,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348663530i/18288.jpg"
       },
       {
-        id: 22,
+        id: '22',
         genre: "Academic, Physics",
         name: "A Brief History of Time",
         shortName: "Brief History",
@@ -243,7 +243,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1333578746i/3869.jpg"
       },
       {
-        id: 23,
+        id: '23',
         genre: "Academic, Mathematics",
         name: "Introduction to the Theory of Computation",
         shortName: "Theory of Computation",
@@ -254,7 +254,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1347452544i/400716.jpg"
       },
       {
-        id: 24,
+        id: '24',
         genre: "Academic, Sociology",
         name: "The Sociological Imagination",
         shortName: "Sociological Imagination",
@@ -265,7 +265,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348048258i/414773.jpg"
       },
       {
-        id: 25,
+        id: '25',
         genre: "Academic, History",
         name: "Guns, Germs, and Steel: The Fates of Human Societies",
         shortName: "Guns, Germs, Steel",
@@ -276,7 +276,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1453215833i/1842.jpg"
       },
       {
-        id: 26,
+        id: '26',
         genre: "Academic, Economics",
         name: "Capital in the Twenty-First Century",
         shortName: "Capital",
@@ -287,7 +287,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1390111547i/18736925.jpg"
       },
       {
-        id: 27,
+        id: '27',
         genre: "Academic, Biology",
         name: "The Selfish Gene",
         shortName: "Selfish Gene",
@@ -298,7 +298,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1366758096i/61535.jpg"
       },
       {
-        id: 28,
+        id: '28',
         genre: "Academic, Linguistics",
         name: "Syntactic Structures",
         shortName: "Syntactic Structures",
@@ -309,7 +309,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1385600294i/38340.jpg"
       },
       {
-        id: 29,
+        id: '29',
         genre: "Academic, Political Science",
         name: "The Origins of Political Order",
         shortName: "Origins",
@@ -320,7 +320,7 @@ export const BooksDetails = [
         imageId: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1317064084i/9704856.jpg"
       },
       {
-        id: 30,
+        id: '30',
         genre: "Academic, Psychology",
         name: "Thinking, Fast and Slow",
         shortName: "Thinking",
