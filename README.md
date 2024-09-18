@@ -17,7 +17,7 @@ This is a simple React-based application where users can browse books, add new o
 - Click on any book to see its details.
 ### Searching for Books
 - Use the search bar to find books by their title quickly.
-- Adding New Books
+### Adding New Books
 - Navigate to the "Add Book" page.
 - Fill in the book’s title, category, and rating, and submit the form to add the book to the collection.
 
